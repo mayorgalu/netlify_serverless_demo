@@ -1,8 +1,8 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 
 function Fetch() {
   useEffect(() => {
-    fetch("https://date.nager.at/api/v2/publicholidays/2020/US", {
+    fetch("/.netlify/functions/node-fetch", {
       headers: { accept: "Accept: application/json" },
     })
       .then((data) => {
